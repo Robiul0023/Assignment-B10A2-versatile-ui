@@ -6,7 +6,7 @@
 
 
 header{
-    background-color: #282828;
+    background-color: #222222;
     padding-top: 30px;
 }
 
@@ -63,7 +63,7 @@ nav{
     justify-content: center;
     align-items: center;
     gap: 0px;
-    margin-bottom: 100px;
+    padding-bottom: 30px;
     
 }
 
@@ -642,4 +642,56 @@ px      68    160    252    344    436    */
             font-size: 10px;
         }
 
+}
+
+/*========Change Habits styles====== */
+
+.change-habits{
+    background-color: #000000;
+    padding: 100px 198px;
+}
+
+
+.habits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.habits h2{
+    font-size: 30px;
+    color:#FFFFFF;
+}
+
+
+
+.changeHabits-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    /* align-items: center; */
+    gap: 40px;
+    padding-top: 58px;
+}
+
+.change h4{
+    color:#FFFFFF;
+    font: 18px;
+    font-weight: 700;
+    margin: 10px;
+    text-align: center;
+}
+
+.change-image{
+    width: 100%;
+    
+}
+
+
+.change-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    
 }
