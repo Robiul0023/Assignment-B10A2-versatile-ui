@@ -187,6 +187,8 @@ nav{
 }
 
 
+
+
 /*============== Responsive style================= */
 
 /*		Tablet Layout: 768px.
@@ -200,22 +202,21 @@ px      68    160    252    344    436    528    620    712    */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	
     header{
-        padding-left:30px;
-        padding-right:30px;
+        padding: 52px 20px;
     }
-
+	
     nav{
         width: 100%;
         display: flex;
-        justify-content: space-around;
-        background: #282828;
-        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 52px 0px;
+        
     }
 
 
     .banner-container{
         flex-direction: column;
-        background-color: #282828;
         align-items: center;
         padding: 20px;
         gap:100px;
@@ -308,15 +309,16 @@ px      68    160    252    */
 @media only screen and (max-width: 767px) {
 
     header{
-        padding: 20px 50px;
+        padding: 52px 20px;
     }
 	
     nav{
         width: 100%;
         display: flex;
         justify-content: space-between;
-        background: #282828;
-        padding: 20px;
+        align-items: center;
+        padding: 52px 0px;
+        
     }
 
     .nav-menu{
@@ -327,12 +329,12 @@ px      68    160    252    */
         display: block;
         font-size: 40px;
         color:#B9B9B9;
+        
     }
 
 
     .banner-container{
         flex-direction: column;
-        background-color: #282828;
         align-items: center;
         padding: 20px;
         gap:100px;
@@ -425,17 +427,17 @@ px      68    160    252    344    436    */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
     header{
-        padding: 20px 50px;
-    }
-    
-	
-    nav{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        background: #282828;
-        padding: 20px;
-    }
+        padding: 52px 20px;
+      } 
+          
+      nav{
+       width: 90%;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       
+      }
+
 
     .nav-menu{
         display: none;
@@ -450,7 +452,6 @@ px      68    160    252    344    436    */
 
     .banner-container{
         flex-direction: column;
-        background-color: #282828;
         align-items: center;
         padding: 20px;
         gap:100px;
@@ -539,71 +540,77 @@ px      68    160    252    344    436    */
 	only screen and (-webkit-min-device-pixel-ratio: 2),
 	only screen and (min-device-pixel-ratio: 2) {
       
-        header{
-
-            padding: 20px 50px;
-        }
+     header{
+      padding: 52px 20px;
+    } 
         
-        nav{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            background: #282828;
-            align-items: center;
-        }
+    nav{
+     width: 90%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     
+    }
 
-        .nav-menu{
-            display: none;
-        }
+    .nav-menu{
+     display: none;
 
-        .hamburger-menu{
-            display: block;
-            font-size: 40px;
-            color:#B9B9B9;
-        }
+    }
+
+    .hamburger-menu{
+      display: block;
+      font-size: 40px;
+      color:#B9B9B9;
+     }
 
 
-        .banner-container{
-            flex-direction: column;
-            background-color: #282828;
-            align-items: center;
-            padding: 20px;
-            gap:100px;
-        }
+    .banner-container{
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      padding: 0px;
+      gap:100px;
+    }
 
-        .banner-content{
-            width:100%;
-        }
+    .banner-content{
+      width:100%;
+      padding: 51px 20px 48px 21px;
 
-        .banner-title{
-            font-size: 36px;
-        }
+     }
 
-        .video-tutorial h4{
-            font-size: 18px;
-            color:#FAFAF9;
-        }
+    .banner-title{
+      font-size: 36px;
+    }
 
-        .btn-club{
-            padding: 10px 18px 16px 18px;
-            border-radius: 22px;
-            font-size: 10px;
-            height: 40px;
-        }
+   .video-tutorial h4{
+     font-size: 18px;
+     color:#FAFAF9;
+    }
+
+    .btn-club{
+      width: 150px;
+      padding: 10px 18px 16px 18px;
+      border-radius: 22px;
+      font-size: 10px;
+      height: 40px;
+    }
         
-        .download-btn{
-            padding: 10px 18px 16px 18px;
-            border-radius: 22px;
-            font-size: 10px;
-            height: 40px;
+    .download-btn{
+      width: 150px;  
+      padding: 10px 18px 16px 18px;
+      border-radius: 22px;
+      font-size: 10px;
+      height: 40px;
         
-        }
+     }
 
-        .banner-container{
-            flex-direction: column;
-            align-items: center;
-            gap: 140px;
-        }
+     .banner-container{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 140px;
+      
+     }
 
 
         .video-tutorial-container{
@@ -659,7 +666,7 @@ px      68    160    252    344    436    */
 }
 
 .habits h2{
-    font-size: 30px;
+    font-size: 42px;
     color:#FFFFFF;
 }
 
@@ -715,6 +722,7 @@ px      68    160    252    344    436    528    620    712    */
 	
     .change-habits{
         padding: 50px;
+        padding-bottom: 0px;
     }
 
     .changeHabits-container{
@@ -797,7 +805,12 @@ px      68    160    252    344    436    */
 	only screen and (min-device-pixel-ratio: 2) {
 
         .change-habits{
-            padding: 50px;
+            padding: 28px;
+        }
+
+        .habits h2{
+            font-size: 22px;
+            margin: 10px 0px;
         }
 	
         .changeHabits-container{
@@ -809,4 +822,505 @@ px      68    160    252    344    436    */
             width: 100%;
             
         }
+}
+
+
+/*===== Run extra mile styles==== */
+
+.run-extraMile{
+    background-color: #000000;
+    padding-top: 100px;
+    padding-bottom: 91px;
+}
+
+.run-extraMileContainer{
+    display: flex;
+    justify-content: center;
+    background-color: #222222;
+    margin: 0px 190px;
+    gap: 165px;
+    border-radius: 10px;
+    padding: 30px 54px 30px 35px;
+   
+}
+
+.extra-mile{
+    padding: ;
+}
+
+.extra-mile h2{
+   font-size: 48px;
+   color: #FFFFFF;
+   padding-bottom: 14px;
+}
+
+.extra-mile p{
+  font-size: 14px;
+  color:#969287;
+  padding-bottom: 34px;
+
+}
+
+.btn-runMile{
+    padding: 10px 18px 16px 18px;
+    border-radius: 22px;
+    font-size: 18px;
+    font-weight: 600;
+    height: 40px; 
+    background-color: #E6533C;
+    border: none;
+    color:#FFFFFF;
+}
+
+.extraMile-potrait img{
+    width: 366px;
+    border-radius: 18px;
+}
+
+
+/*==========Responsive styles==========*/
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+		
+.run-extraMileContainer{
+    display: flex;
+    margin:0px;
+    gap: 31px;
+    margin: 66px 20px;
+    padding: 31px 33px;
+  
+
+}
+
+ .btn-runMile{
+    width: 100%;
+    font-size: 14px;
+  }
+
+ .extra-mile h2{
+    font-size: 22px;
+    padding-bottom: 14px;
+ }
+
+.extraMile-potrait img{
+    width:100%;
+    border-radius: 18px;
+}
+
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+		
+.run-extraMileContainer{
+    flex-direction: column;
+    margin:0px;
+    gap: 31px;
+    margin: 66px 20px;
+    padding: 31px 33px;
+  
+
+}
+
+ .btn-runMile{
+    width: 100%;
+    font-size: 14px;
+  }
+
+ .extra-mile h2{
+    font-size: 22px;
+    padding-bottom: 14px;
+ }
+
+.extraMile-potrait img{
+    width:100%;
+    border-radius: 18px;
+}
+
+	
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+		
+.run-extraMileContainer{
+    flex-direction: column;
+    margin:0px;
+    gap: 31px;
+    margin: 66px 20px;
+    padding: 31px 33px;
+  
+
+}
+
+ .btn-runMile{
+    width: 100%;
+    font-size: 14px;
+  }
+
+ .extra-mile h2{
+    font-size: 22px;
+    padding-bottom: 14px;
+ }
+
+.extraMile-potrait img{
+    width:100%;
+    border-radius: 18px;
+}
+
+
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	
+ .run-extraMile{
+    padding-bottom: 66px;
+ }
+
+.run-extraMileContainer{
+    flex-direction: column;
+    margin:0px;
+    gap: 31px;
+    margin: 66px 20px;
+    padding: 31px 33px;
+  
+
+}
+
+ .btn-runMile{
+    width: 100%;
+    font-size: 14px;
+  }
+
+ .extra-mile h2{
+    font-size: 22px;
+    padding-bottom: 14px;
+ }
+
+.extraMile-potrait img{
+    width:100%;
+    border-radius: 18px;
+}
+
+	
+}
+
+/*=========Training excercise style=====*/
+
+.training-excercise{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 91px 190px 88px 190px;
+    background-color: #000000;
+}
+
+
+.training{
+    padding-bottom:58px;
+   
+}
+
+.training h2{
+    color:#FFFFFF;
+    font-size: 48px;
+    margin:10px;
+}
+
+.training p{
+    color:#969287;
+    font-size: 14px;
+}
+
+
+.trainingExcercise-container{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap:0;
+}
+
+
+.trainingExcercise-container img{
+    width:100%;
+    height: 201px;
+    opacity: 0.5;
+}
+img:hover {
+    opacity: 1.0;
+  }
+
+
+.potrait-one{
+    background-color: #08846E;
+   
+}
+
+.potrait-two{
+    background-color: #80302D;
+}
+
+.potrait-three{
+    background-color: #797876;
+}
+
+.potrait-four{
+    background-color: #1B171A;
+}
+
+.potrait-five{
+    background-color: #B3EC9F;
+}
+
+.potrait-six{
+    background-color: #A9C1F9;
+}
+
+
+.bmi-calculator{
+    width: 100%;
+    margin: 88px 194px;
+    
+}
+
+.bmi-calculator h2{
+    color:#FFFFFF;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.bmi-calculator p{
+    color:#969287;
+    font-size: 14px;
+}
+
+
+
+/*=========Responsive styles=======*/
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+    .training-excercise{
+        padding: 58px 20px 30px 20px;
+     }
+
+     .training{
+       width:100%;
+       padding-bottom: 52px;
+     }
+
+     .training h2{
+       color:#FFFFFF;
+       font-size: 32px;
+       margin:10px;
+   }
+   
+   .training p{
+       color:#969287;
+       font-size: 14px;
+   }
+       
+    .trainingExcercise-container{
+         display:grid;
+         grid-template-columns: repeat(3, 1fr);
+         justify-content: center;
+         gap:0;
+       }
+
+    .trainingExcercise-container img{
+       width:100%;
+       height: auto;
+       opacity: 0.5;
+   }
+   
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+    .training-excercise{
+        padding: 58px 20px 30px 20px;
+     }
+
+     .training{
+       width:100%;
+       padding-bottom: 52px;
+     }
+
+     .training h2, .bmi-calculator h2{
+       color:#FFFFFF;
+       font-size: 32px;
+       margin:10px;
+   }
+   
+   .training p, .bmi-calculator p{
+       color:#969287;
+       font-size: 14px;
+   }
+       
+    .trainingExcercise-container{
+         display:grid;
+         grid-template-columns: repeat(2, 1fr);
+         justify-content: center;
+         gap:0;
+       }
+
+    .trainingExcercise-container img{
+       width:100%;
+       height: auto;
+       opacity: 0.5;
+   }
+   
+	
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+    .training-excercise{
+        padding: 58px 20px 30px 20px;
+     }
+
+     .training{
+       width:100%;
+       padding-bottom: 52px;
+     }
+
+     .training h2, .bmi-calculator h2{
+       color:#FFFFFF;
+       font-size: 32px;
+       margin:10px;
+   }
+   
+   .training p, .bmi-calculator p{
+       color:#969287;
+       font-size: 14px;
+   }
+       
+    .trainingExcercise-container{
+         display:grid;
+         grid-template-columns: repeat(2, 1fr);
+         justify-content: center;
+         gap:0;
+       }
+
+    .trainingExcercise-container img{
+       width:100%;
+       height: auto;
+       opacity: 0.5;
+   }
+   
+
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+     .training-excercise{
+         padding: 58px 20px 30px 20px;
+      }
+
+      .training{
+        width:100%;
+        padding-bottom: 52px;
+      }
+
+      .training h2, .bmi-calculator h2{
+        color:#FFFFFF;
+        font-size: 32px;
+        margin:10px;
+    }
+    
+    .training p, .bmi-calculator p{
+        color:#969287;
+        font-size: 14px;
+    }
+        
+     .trainingExcercise-container{
+          display:grid;
+          grid-template-columns: repeat(2, 1fr);
+          justify-content: center;
+          gap:0;
+        }
+
+     .trainingExcercise-container img{
+        width:100%;
+        height: auto;
+        opacity: 0.5;
+    }
+
+	
 }
