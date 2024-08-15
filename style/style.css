@@ -1051,6 +1051,7 @@ px      68    160    252    344    436    */
     flex-direction: column;
     align-items: center;
     padding: 91px 190px 88px 190px;
+    padding-bottom: 0px;
     background-color: #000000;
 }
 
@@ -1073,6 +1074,7 @@ px      68    160    252    344    436    */
 
 
 .trainingExcercise-container{
+    
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
@@ -1080,45 +1082,108 @@ px      68    160    252    344    436    */
 }
 
 
+
+
 .trainingExcercise-container img{
+    position: relative;
     width:100%;
     height: 201px;
     opacity: 0.5;
+   
 }
+
 img:hover {
     opacity: 1.0;
   }
 
 
 .potrait-one{
+    position: relative;
     background-color: #08846E;
-   
+    
+}
+
+.potraitText-one{
+    position: absolute;
+    bottom: 50px;
+    left: 16px;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .potrait-two{
+    position: relative;
     background-color: #80302D;
 }
 
+.potraitText-two{
+    position: absolute;
+    top:16px;
+    left:16px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+}
+
 .potrait-three{
+    position: relative;
     background-color: #797876;
 }
 
+.potraitText-three{
+    position: absolute;
+    bottom: 50px;
+    left:16px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+
 .potrait-four{
+    position: relative;
     background-color: #1B171A;
 }
 
+
+.potraitText-four{
+    position:absolute;
+    right:16px;
+    top:16px;
+    color: #FFFFFF;
+}
+
+
 .potrait-five{
+    position:relative;
     background-color: #B3EC9F;
 }
 
+.potraitText-five{
+    position:absolute;
+    bottom:16px;
+    left:16px;
+    color: #FFFFFF;
+}
+
 .potrait-six{
+    position: relative;
     background-color: #A9C1F9;
+}
+
+.potraitText-six{
+    position: absolute;
+    bottom:16px;
+    left:16px;
+    color: #FFFFFF;
+    
+
 }
 
 
 .bmi-calculator{
     width: 100%;
-    margin: 88px 194px;
+    padding:88px 194px;
     
 }
 
@@ -1324,3 +1389,365 @@ px      68    160    252    344    436    */
 
 	
 }
+
+
+/*========= Calculate chart style======= */
+
+.calculator-chart{
+    background-color: #000000;
+    padding: 88px 0px;
+}
+
+
+.calculatorChart-container{
+    display: flex;
+    margin-top: 28px;
+    background-color: #222222;
+    justify-content: center;
+    gap: 175px;
+    padding : 52px 189px;
+}
+
+.calculatorChart-container h3{
+    color: #FFFFFF;
+    font-size: 28px;
+    font-weight: 700;
+    
+}
+
+.bmi-chart{
+    width:50%;
+    height: auto;
+}
+
+.bmi-chart h3{
+    padding-bottom: 52px;
+}
+
+.bmi-calculate h3{
+    padding-bottom: 14px;
+}
+
+.bmi-calculate p{
+    padding-bottom: 34px;
+}
+
+.calculatorChart-container p, td{
+    color:#969287;
+    font-size: 14px;
+ 
+}
+
+.bmi-chart table{
+    width: 310px;
+    padding-bottom: 133px;
+    table-layout:fixed;
+    
+}
+
+
+
+.bmi-chart table, th, td{
+    border: 1px solid #969287;
+    padding: 10px;
+    border-collapse: collapse;
+    
+}
+
+table th{
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: justify;
+}
+
+input[type="text"]{
+    width: 25%;
+    margin:10px 0px;
+    padding: 10px 13px 10px 60px;
+    background-color: #383838;
+    color:#F0F0F4;
+    border-radius: 6px;
+    border:none;
+    
+}
+
+select{
+    width:10%;
+    margin: 0px;
+    padding: 10px 5px;
+    border-radius: 6px;
+    border:none;
+    background-color: #383838;
+    color:#F0F0F4;
+   
+}
+
+input[type="button"]{
+    padding:12px 50px;
+    background-color: #E6533C;
+    color:#FFFFFF;
+    border-radius: 32px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    height:54px;
+    margin: 34px auto 52px auto;
+}
+
+
+/*========Responsive styles======= */
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+    .calculatorChart-container{
+        flex-direction: column;
+        gap:0px;
+        padding:34px 20px 43px 20px;
+    }
+
+    .bmi-chart{
+        width:100%;
+        padding-bottom: 42px;
+    }
+
+    .bmi-chart table{
+        width: 100%;
+        padding: 23px 20px 64px 43px;
+        table-layout:fixed;
+        
+    }
+    .bmi-chart h3{
+        font-size: 16px;
+        padding-bottom: 23px;
+    }
+
+
+    table th{
+        font-size: 16px;
+        
+      }
+
+      .bmi-calculate{
+        width: 100%;
+      }
+
+      .bmi-calculate h3{
+        font-size: 16px;
+      }
+
+      .bmi-calculate form{
+         width: 100%;
+      }
+
+
+
+      input[type="text"]{
+        width:20%;
+        text-align: right;
+        font-size: 10px;
+        
+      }
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+    .calculatorChart-container{
+        flex-direction: column;
+        gap:0px;
+        padding:34px 20px 43px 20px;
+    }
+
+    .bmi-chart{
+        width:100%;
+        padding-bottom: 42px;
+    }
+
+    .bmi-chart table{
+        width: 100%;
+        padding: 23px 20px 64px 43px;
+        table-layout:fixed;
+        
+    }
+    .bmi-chart h3{
+        font-size: 16px;
+        padding-bottom: 23px;
+    }
+
+
+    table th{
+        font-size: 16px;
+        
+      }
+
+      .bmi-calculate{
+        width: 100%;
+      }
+
+      .bmi-calculate h3{
+        font-size: 16px;
+      }
+
+      .bmi-calculate form{
+         width: 100%;
+      }
+
+
+
+      input[type="text"]{
+        width:20%;
+        text-align: right;
+        font-size: 10px;
+        
+      }
+	
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+    .calculatorChart-container{
+        flex-direction: column;
+        gap:0px;
+        padding:34px 20px 43px 20px;
+    }
+
+    .bmi-chart{
+        width:100%;
+        padding-bottom: 42px;
+    }
+
+    .bmi-chart table{
+        width: 100%;
+        padding: 23px 20px 64px 43px;
+        table-layout:fixed;
+        
+    }
+    .bmi-chart h3{
+        font-size: 16px;
+        padding-bottom: 23px;
+    }
+
+
+    table th{
+        font-size: 16px;
+        
+      }
+
+      .bmi-calculate{
+        width: 100%;
+      }
+
+      .bmi-calculate h3{
+        font-size: 16px;
+      }
+
+      .bmi-calculate form{
+         width: 100%;
+      }
+
+
+
+      input[type="text"]{
+        width:20%;
+        text-align: right;
+        font-size: 10px;
+        
+      }
+
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+
+        .calculatorChart-container{
+            flex-direction: column;
+            gap:0px;
+            padding:34px 20px 43px 20px;
+        }
+
+        .bmi-chart{
+            width:100%;
+            padding-bottom: 42px;
+        }
+
+        .bmi-chart table{
+            width: 100%;
+            padding: 23px 20px 64px 43px;
+            table-layout:fixed;
+            
+        }
+        .bmi-chart h3{
+            font-size: 16px;
+            padding-bottom: 23px;
+        }
+
+
+        table th{
+            font-size: 16px;
+            
+          }
+
+          .bmi-calculate{
+            width: 100%;
+          }
+
+          .bmi-calculate h3{
+            font-size: 16px;
+          }
+
+          .bmi-calculate form{
+             width: 100%;
+          }
+
+
+
+          input[type="text"]{
+            width:20%;
+            text-align: right;
+            font-size: 10px;
+            
+          }
+
+        }
+	
+
+
+
+
+
+
+
