@@ -1745,6 +1745,76 @@ px      68    160    252    344    436    */
         }
 	
 
+/*======= Section our team===== */
+
+.our-team{
+    padding: 0px 150px  88px 150px;
+    
+    background-color: #000000;
+   
+}
+
+.team{
+    width:100%;
+    display: block;
+    text-align: center;
+    padding-bottom: 58px;
+}
+
+.team h2{
+    color:#FFFFFF;
+}
+
+.team p{
+    color:#969287;
+    font-size: 14px;
+}
+
+
+.ourTeam-container{
+    width:1060px;
+    height:auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 20px;
+    background-color: #191919;
+    padding:20px;
+    margin: 0px auto;
+    
+}
+
+.meetTeam{
+    position:relative;
+    width: 100%;
+}
+
+.trainer-name{
+    position:absolute;
+    bottom:35px;
+    left: 19px;
+}
+
+.trainer-name h6{
+    color:#FFFFFF;
+    font-size: 20px;
+}
+
+.trainer-name p{
+    color:#969287;
+    font-size: 14px;
+}
+
+ .meetTeam img{
+    width: 327px;
+    height: 272px;
+    border-radius: 18px;
+    margin: 0 auto;
+    display: block;
+ }
+
+ 
+
 
 
 
