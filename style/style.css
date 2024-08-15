@@ -191,6 +191,102 @@ nav{
 
 /*============== Responsive style================= */
 
+@media only screen and (min-width: 992px) and (max-width: 1280px){
+    header{
+        padding: 52px 20px;
+    }
+	
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 52px 0px;
+        
+    }
+
+
+    .banner-container{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap:100px;
+    }
+
+    .banner-content{
+        width:100%;
+    }
+
+    .banner-title{
+        font-size: 36px;
+    }
+
+    .video-tutorial h4{
+        font-size: 18px;
+        color:#FAFAF9;
+    }
+
+    .btn-club{
+        padding: 10px 18px 16px 18px;
+        border-radius: 22px;
+        font-size: 10px;
+        height: 40px;
+    }
+    
+    .download-btn{
+        padding: 10px 18px 16px 18px;
+        border-radius: 22px;
+        font-size: 10px;
+        height: 40px;
+    
+    }
+
+    .banner-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 140px;
+    }
+
+
+    .video-tutorial-container{
+        margin-top: 130px;
+        z-index: 1;
+        width:100%;
+        padding: 10px;
+        margin-right: 35px;
+    
+       }
+
+    .red-circle{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+
+    }
+
+    .potrait img{
+        width: 100%;
+        height: 388px;
+        overflow: hidden;
+        
+    }
+
+    .workout-videos{
+        width: 100%;
+        margin-left: -30px;
+        margin-top: -70px;
+    }
+
+    .workout-videos h4{
+        font-size: 20px;
+
+    }
+
+    .workout-videos p{
+        font-size: 10px;
+    }
+}
+
 /*		Tablet Layout: 768px.
 		Gutters: 24px.
 		Outer margins: 28px.
@@ -709,6 +805,25 @@ px      68    160    252    344    436    */
 
 } 
 
+@media only screen and (min-width: 992px) and (max-width: 1280px){
+    .change-habits{
+        padding: 50px;
+        padding-bottom: 0px;
+    }
+
+    .changeHabits-container{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+     }
+
+
+     .change-image img{
+        width: 100%;
+
+    }
+}
+
+
 
 /*		Tablet Layout: 768px.
 		Gutters: 24px.
@@ -879,6 +994,36 @@ px      68    160    252    344    436    */
 
 
 /*==========Responsive styles==========*/
+
+@media only screen and (min-width: 992px) and (max-width: 1280px){
+    .run-extraMileContainer{
+        display: flex;
+        margin:0px;
+        gap: 31px;
+        margin: 66px 20px;
+        padding: 31px 33px;
+      
+    
+    }
+    
+     .btn-runMile{
+        width: 100%;
+        font-size: 14px;
+      }
+    
+     .extra-mile h2{
+        font-size: 22px;
+        padding-bottom: 14px;
+     }
+    
+    .extraMile-potrait img{
+        width:100%;
+        border-radius: 18px;
+    }
+    
+}
+
+
 
 
 /*		Tablet Layout: 768px.
@@ -1202,6 +1347,44 @@ img:hover {
 
 /*=========Responsive styles=======*/
 
+@media only screen and (min-width: 992px) and (max-width: 1280px){
+    .training-excercise{
+        padding: 58px 20px 30px 20px;
+     }
+
+     .training{
+       width:100%;
+       padding-bottom: 52px;
+     }
+
+     .training h2{
+       color:#FFFFFF;
+       font-size: 32px;
+       margin:10px;
+   }
+   
+   .training p{
+       color:#969287;
+       font-size: 14px;
+   }
+       
+    .trainingExcercise-container{
+         display:grid;
+         grid-template-columns: repeat(3, 1fr);
+         justify-content: center;
+         gap:0;
+       }
+
+    .trainingExcercise-container img{
+       width:100%;
+       height: auto;
+       opacity: 0.5;
+   }
+   
+}
+
+
+
 
 /*		Tablet Layout: 768px.
 		Gutters: 24px.
@@ -1497,6 +1680,62 @@ input[type="button"]{
 
 /*========Responsive styles======= */
 
+@media only screen and (min-width: 992px) and (max-width: 1280px){
+    .calculatorChart-container{
+        flex-direction: column;
+        gap:0px;
+        padding:34px 20px 43px 20px;
+    }
+
+    .bmi-chart{
+        width:100%;
+        padding-bottom: 42px;
+    }
+
+    .bmi-chart table{
+        width: 100%;
+        padding: 23px 20px 64px 43px;
+        table-layout:fixed;
+        
+    }
+    .bmi-chart h3{
+        font-size: 16px;
+        padding-bottom: 23px;
+    }
+
+
+    table th{
+        font-size: 16px;
+        
+      }
+
+      .bmi-calculate{
+        width: 100%;
+      }
+
+      .bmi-calculate h3{
+        font-size: 16px;
+      }
+
+      .bmi-calculate form{
+         width: 100%;
+      }
+
+
+
+      input[type="text"]{
+        width:20%;
+        text-align: right;
+        font-size: 10px;
+        
+      }
+}
+
+
+
+
+
+
 /*		Tablet Layout: 768px.
 		Gutters: 24px.
 		Outer margins: 28px.
@@ -1748,8 +1987,7 @@ px      68    160    252    344    436    */
 /*======= Section our team===== */
 
 .our-team{
-    padding: 0px 150px  88px 150px;
-    
+    padding: 0px 190px  88px 190px;
     background-color: #000000;
    
 }
@@ -1780,7 +2018,6 @@ px      68    160    252    344    436    */
     gap: 20px;
     background-color: #191919;
     padding:20px;
-    margin: 0px auto;
     
 }
 
@@ -1813,7 +2050,264 @@ px      68    160    252    344    436    */
     display: block;
  }
 
+ /*======= Responsive styles======== */
+
+ @media only screen and (min-width: 992px) and (max-width: 1280px) {
+	
+    .our-team{
+        display: flex;
+        flex-direction: column;
+        padding: 66px 20px;
+        background-color: #000000;
+       
+    }
+
+    .team{
+        width:100%;
+        padding: 0px 22px 37px 22px;
+    }
+
+    .team h2{
+        color:#FFFFFF;
+        font-size: 22px;
+        padding-bottom: 14px;
+    }
+    
+    .ourTeam-container{
+        width:90%;
+        height:auto;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+        
+    }
+
+    .meetTeam{
+        width:100%;
+        display: block;
+        margin:0 auto;
+    }
+
+    .meetTeam img{
+        width: 100%;
+        height: 272px;
+
+     }
+}
+
+
+
+
+
  
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+    .our-team{
+        display: flex;
+        flex-direction: column;
+        padding: 66px 20px;
+        background-color: #000000;
+       
+    }
+
+    .team{
+        width:100%;
+        padding: 0px 22px 37px 22px;
+    }
+
+    .team h2{
+        color:#FFFFFF;
+        font-size: 22px;
+        padding-bottom: 14px;
+    }
+    
+    .ourTeam-container{
+        width:90%;
+        height:auto;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+        
+    }
+
+    .meetTeam{
+        width:100%;
+        display: block;
+        margin:0 auto;
+    }
+
+    .meetTeam img{
+        width: 100%;
+        height: 272px;
+
+     }
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+    .our-team{
+        display: flex;
+        flex-direction: column;
+        padding: 66px 20px;
+        background-color: #000000;
+        align-items: center;
+       
+    }
+
+    .team{
+        width:100%;
+        padding: 0px 22px 37px 22px;
+    }
+
+    .team h2{
+        color:#FFFFFF;
+        font-size: 22px;
+        padding-bottom: 14px;
+    }
+    
+    .ourTeam-container{
+        width:80%;
+        height:auto;
+        grid-template-columns: 1fr;
+        
+    }
+
+    .meetTeam{
+        width:100%;
+        display: block;
+        margin:0 auto;
+    }
+
+
+
+    .meetTeam img{
+        width: 100%;
+        height: 272px;
+        display: block;
+        margin: 0 auto;
+
+     }
+	
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+    .our-team{
+        display: flex;
+        flex-direction: column;
+        padding: 66px 20px;
+        background-color: #000000;
+       
+    }
+
+    .team{
+        width:100%;
+        padding: 0px 22px 37px 22px;
+    }
+
+    .team h2{
+        color:#FFFFFF;
+        font-size: 22px;
+        padding-bottom: 14px;
+    }
+    
+    .ourTeam-container{
+        width:80%;
+        height:auto;
+        grid-template-columns: 1fr;
+        
+    }
+
+    .meetTeam{
+        width:100%;
+        display: block;
+        margin:0 auto;
+    }
+
+    .meetTeam img{
+        width: 100%;
+        height: 272px;
+
+     }
+
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+        .our-team{
+            display: flex;
+            flex-direction: column;
+            padding: 66px 20px;
+            background-color: #000000;
+           
+        }
+
+        .team{
+            width:100%;
+            padding: 0px 22px 37px 22px;
+        }
+
+        .team h2{
+            color:#FFFFFF;
+            font-size: 22px;
+            padding-bottom: 14px;
+        }
+        
+        .ourTeam-container{
+            width:100%;
+            height:auto;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            
+            
+        }
+
+        .meetTeam{
+            width:100%;
+            
+        }
+
+        .meetTeam img{
+            width: 100%;
+            height: 272px;
+
+         }
+	
+}
 
 
 
