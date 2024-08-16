@@ -2325,7 +2325,7 @@ ul li{
 
 hr{  
     margin: 80px 190px -36px 190px; 
-    background-color: #969287;
+    background-color: #B9B9B9;
 
 
 }
@@ -2361,7 +2361,7 @@ hr{
     }
 
     hr{  
-        margin: 80px 190px 0px 190px; 
+        margin: 80px 190px -36px 190px;  
     
     
     }
@@ -2410,8 +2410,7 @@ px      68    160    252    344    436    528    620    712    */
 
 
     hr{  
-        margin: 80px 190px 0px 190px; 
-    
+        margin: 80px 190px -36px 190px;  
     
     }
 
@@ -2545,7 +2544,7 @@ px      68    160    252    344    436    */
 hr{  
     width: 80%;
     margin: 72px  20px 0px 20px; 
-    color:
+    
 }
 	
 }
